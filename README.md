@@ -7,7 +7,7 @@ The CLAIF API and CLAIF Annotator are available at https://api-staging.claif.org
 
 ## About the project
 ### Improving the quality of Large Language Models (LLMs) for programming
-This project (https://claif.org) aims to improve LLM training data for developers by capturing the data generated during programming sessions. Most LLMs used for programming are trained on code commits and they don't capture live programming sessions. This project aims to capture the data generated during live programming sessions - every character that is input or output in a terminal is captured. This data can be used to create a free and open-source LLM (Large Language Model).
+This project (https://claif.org) aims to improve LLM training data for developers by capturing the data generated during programming sessions. Most LLMs used for programming are trained on code commits and they don't capture live programming sessions. This project aims to capture the data generated during live programming sessions - every character (visible or invisible) that is input or output in a terminal is captured. This data can be used to create a free and open-source LLM (Large Language Model) that is more capable of assisting developers with the full reality of what is encountered during programming.
 
 ### Actually respecting the copyright of the training data
 Most LLMs used for programming are trained on public repositories and they violate the copyright of the code authors by not making it fully tansparent what data was used to train the model and how that constitutes its overall license. This project aims to respect the copyright of the code authors by making the training data fully transparent.
