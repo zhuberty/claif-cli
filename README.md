@@ -62,8 +62,3 @@ poetry run python -m claif_cli --base-url "https://api-staging.claif.org/v1" lis
 |    1 | Example    |          6 |      84 | 15KB   | 1527s      | some_user |
 +------+------------+------------+---------+--------+------------+-----------+
 ```
-
-### Get Terminal Recording
-```bash
-poetry run python -m claif_cli --base-url "https://api-staging.claif.org/v1" get-recording "<recording_id>"
-```
