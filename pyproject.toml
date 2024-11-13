@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "claif-cli"
+version = "0.1.0"
+description = "CopyLeft AI Foundation CLI"
+authors = ["Zach Huberty <10377254+zhuberty@users.noreply.github.com>"]
+license = "GPL-3.0"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+tabulate = "0.9.0"
+requests = "2.32.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+claif-cli = "claif_cli.main:main"
