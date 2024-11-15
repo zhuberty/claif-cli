@@ -58,8 +58,8 @@ Example:
 ```bash
 poetry run python -m claif_cli --base-url "https://api-staging.claif.org/v1" create-recording "haskell_llm_2_1.txt" "Haskell LLM - 2.1" "Creating an LLM with Haskell - 2.1"
 ```
-### Upload/Create Audio Recording and Transcription
-If you have created an audio recording of your solo or pair-programming session, you can upload it to the CLAIF API where the data will be used to help train the LLM to associate the audio recordings with terminal recordings. After the audio recording is uploaded, it will be audomatically transcribed. The transcription can then be annotated using the CLAIF Annotator (not yet implemented).
+### Upload/Create Audio Recording and Transcript
+If you have created an audio recording of your solo or pair-programming session, you can upload it to the CLAIF API where the data will be used to help train the LLM to associate the audio recordings with terminal recordings. After the audio recording is uploaded, it will be audomatically transcribed. The transcript can then be annotated using the CLAIF Annotator (not yet implemented).
 
 ```bash
 poetry run python -m claif_cli --base-url "https://api-staging.claif.org/v1" create-audio "<audio_filepath>"
@@ -70,6 +70,11 @@ poetry run python -m claif_cli --base-url "https://api-staging.claif.org/v1" cre
 ```
 
 ## Read
+### Get Terminal Recording
+```bash
+poetry run python -m claif_cli --base-url "https://api-staging.claif.org/v1" get-terminal-recording "<recording_id>" --revision-number "<revision_number>"
+```
+
 ### List All Terminal Recordings
 ```bash
 poetry run python -m claif_cli --base-url "https://api-staging.claif.org/v1" list-recordings
@@ -102,12 +107,12 @@ poetry run python -m claif_cli --base-url "https://api-staging.claif.org/v1" upd
 - Request Deletion of terminal recording
 - Get audio recording
 - Request Deletion of audio recording
-- Get audio transcription
-- Update audio transcription
+- Get audio transcripts
+- Update audio transcripts
 - List all audio recordings
-- List all audio transcriptions
+- List all audio transcripts
 - Get a annotation details
 - List all annotations for a recording
 - Get all annotation reviews for a recording (by revision #)
 - Llama.cpp endpoints for general use
-- Llama.cpp endpoints for generating training data from audio recordings/transcriptions and terminal recordings/annotations
+- Llama.cpp endpoints for generating training data from audio recordings/transcripts and terminal recordings/annotations
